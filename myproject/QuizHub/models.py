@@ -5,7 +5,7 @@ class User(models.Model):
     password=models.CharField(null=False,max_length=20)
     name=models.CharField(null=False,max_length=30)
     phone_no=models.CharField(null=False,max_length=13)
-    email=models.CharField(null=False)
+    email=models.CharField(null=False,max_length=255)
     test_attempted=models.IntegerField()
     points=models.FloatField()
 
